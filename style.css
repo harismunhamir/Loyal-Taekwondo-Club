@@ -245,10 +245,16 @@ input, textarea {
 .prestasi-row {
   display: flex;
   gap: 20px;
-  justify-content: center;
+
   overflow-x: auto;
-  padding: 10px 0;
+  flex-wrap: nowrap;
+
+  padding: 10px 20px; /* ⬅️ FIX ANDROID */
+  -webkit-overflow-scrolling: touch;
+
+  justify-content: center;
 }
+
 
 .prestasi-card {
   min-width: 260px;
