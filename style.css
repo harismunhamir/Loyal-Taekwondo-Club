@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +19,7 @@
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 999;
 }
 
@@ -29,7 +34,7 @@
   min-height: 100vh;
   background:
     linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url('Logo Loyal.png') no-repeat center/cover;
+    url('Logo Loyal Transparan.jpeg') no-repeat center/cover;
   color: white;
   text-align: center;
   padding-top: 170px;
@@ -49,6 +54,7 @@
 .section {
   padding: 80px 20px;
   text-align: center;
+  scroll-margin-top: 90px;
 }
 
 .dark {
@@ -223,4 +229,146 @@ input, textarea {
   font-size: 0.95rem;
   opacity: 0.8;
   letter-spacing: 1px;
+}
+
+.section-divider {
+  height: 80px;
+}
+
+/* JARAK TITLE PRESTASI KE BOX */
+#visi-misi h2 + .prestasi-row {
+  margin-top: 35px;
+}
+
+
+/* prestasi */
+.prestasi-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.prestasi-card {
+  min-width: 260px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 16px;
+  border-radius: 10px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.prestasi-card h3 {
+  margin-bottom: 6px;
+  font-size: 1.2rem;
+}
+
+.prestasi-card .event {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.prestasi-row::-webkit-scrollbar {
+  height: 6px;
+}
+
+.prestasi-row::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+}
+
+.prestasi-row {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.medali {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.1rem;
+}
+
+.visi-misi .section-title {
+  color: #ffffff;
+}
+
+.visi-misi {
+  text-align: center;
+  background: #0f0f0f;
+  color: #ffffff;
+}
+
+.vm-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.vm-box {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 25px;
+  border-radius: 14px;
+  text-align: left;
+}
+
+.vm-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.vm-box p,
+.vm-box li {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.vm-box ul {
+  padding-left: 18px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .vm-container {
+    grid-template-columns: 1fr;
+  }
+
+  .vm-box {
+    text-align: center;
+  }
+
+  .vm-box ul {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 38px;
+  width: auto;
+}
+
+@media (max-width: 600px) {
+  .logo-img {
+    height: 32px;
+  }
+
+  .logo span {
+    font-size: 0.95rem;
+  }
 }
