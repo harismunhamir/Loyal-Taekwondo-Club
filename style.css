@@ -240,20 +240,27 @@ input, textarea {
   margin-top: 35px;
 }
 
+#visi-misi h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
 
 /* prestasi */
 .prestasi-row {
   display: flex;
   gap: 20px;
-
   overflow-x: auto;
   flex-wrap: nowrap;
 
-  padding: 10px 20px; /* ⬅️ FIX ANDROID */
-  -webkit-overflow-scrolling: touch;
-
+  padding: 10px 20px;
   justify-content: center;
+  -webkit-overflow-scrolling: touch;
 }
+
 
 
 .prestasi-card {
