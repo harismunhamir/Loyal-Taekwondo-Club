@@ -253,12 +253,14 @@ input, textarea {
 .prestasi-row {
   display: flex;
   gap: 20px;
+
   overflow-x: auto;
   flex-wrap: nowrap;
 
   padding: 10px 20px;
-  justify-content: center;
   -webkit-overflow-scrolling: touch;
+
+  justify-content: flex-start; /* ⬅️ KUNCI FIX */
 }
 
 
@@ -303,6 +305,12 @@ input, textarea {
   display: flex;
   justify-content: space-around;
   font-size: 1.1rem;
+}
+
+@media (min-width: 1024px) {
+  .prestasi-row {
+    justify-content: center;
+  }
 }
 
 .visi-misi .section-title {
